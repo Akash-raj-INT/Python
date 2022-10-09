@@ -1,0 +1,7 @@
+x = 2
+
+sqrt = x** 0.5
+
+#print("sqare root of number is :", sqrt)
+
+x = float(input("First number :" ))
