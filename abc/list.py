@@ -3,6 +3,15 @@ cars=["TATA","NANO","ALTO","Jeep"]
 players=["Dhoni","Messi","Dravid"]
 numbers = [1, 2, 3, 4,]
 
+list1 = ["x", "y", "z"]
+list2 = 1,2,3
+
+list1.append(list2)
+print(list1)
+
+#num2 =numbers.copy()
+#print(num2)
+
 #numbers.sort()
 #print(numbers)
 
