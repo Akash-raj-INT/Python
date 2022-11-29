@@ -1,0 +1,2 @@
+tuple = ("Akash",)
+print(tuple)
