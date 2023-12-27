@@ -1,0 +1,17 @@
+from rubiksolver import RubikSolver
+
+# Create a Rubik's Cube object
+cube = RubikSolver()
+
+# Perform some random moves (optional)
+cube.shuffle()
+
+# Get the current state of the cube
+current_state = cube.get_state()
+print("Current State:")
+print(current_state)
+
+# Solve the cube
+solution = cube.solve()
+print("\nSolution:")
+print(solution)
