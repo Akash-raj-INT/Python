@@ -1,0 +1,25 @@
+Certainly! Here's a simple Python code to calculate the sum of prime numbers up to a given limit:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def sum_of_primes(limit):
+    prime_sum = 0
+    for num in range(2, limit + 1):
+        if is_prime(num):
+            prime_sum += num
+    return prime_sum
+
+# Example: Sum of prime numbers up to 10
+limit = 10
+result = sum_of_primes(limit)
+print(f"Sum of prime numbers up to {limit}: {result}")
+```
+
+You can change the `limit` variable to any desired value to find the sum of prime numbers up to that limit.
