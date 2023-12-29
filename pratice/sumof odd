@@ -1,0 +1,7 @@
+def sum_of_odd_numbers(n):
+    return n**2
+
+# Example usage:
+n = 5  # You can change this to any positive integer
+result = sum_of_odd_numbers(n)
+print(f"The sum of the first {n} odd numbers is: {result}")
