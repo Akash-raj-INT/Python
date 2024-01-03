@@ -1,0 +1,14 @@
+Certainly! If you're looking for a simple example of converting a decimal number to binary in Python, here's a basic code snippet:
+
+```python
+def decimal_to_binary(decimal_number):
+    binary_representation = bin(decimal_number)[2:]
+    return binary_representation
+
+# Example usage
+decimal_number = 10
+binary_result = decimal_to_binary(decimal_number)
+print(f"The binary representation of {decimal_number} is: {binary_result}")
+```
+
+In this example, the `bin()` function is used to convert the decimal number to its binary representation, and `[2:]` is used to remove the '0b' prefix that `bin()` adds.
