@@ -1,0 +1,26 @@
+Certainly! If you want a simple text-based table without using any external libraries, you can achieve that with basic Python formatting. Here's an example:
+
+```python
+# Simple text-based table in Python
+
+# Table headers
+headers = ["Header 1", "Header 2", "Header 3"]
+
+# Table data
+data = [
+    ["Data 1", "Data 2", "Data 3"],
+    ["Data 4", "Data 5", "Data 6"]
+]
+
+# Print table headers
+print(" | ".join(headers))
+
+# Print separator line
+print("-" * (len(" | ".join(headers)) + 4))
+
+# Print table data
+for row in data:
+    print(" | ".join(row))
+```
+
+This code manually formats and prints a simple text-based table with headers and data. Adjust the headers and data according to your requirements.
