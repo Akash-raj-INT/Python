@@ -1,0 +1,40 @@
+import random
+
+def print_list(lst):
+    print(" ".join(map(str, lst)))
+
+def bubble_sort(lst):
+    steps = 0
+    n = len(lst)
+    swapped = True
+    
+    while swapped:
+        swapped = False
+        for i in range(1, n):
+            if lst[i - 1] > lst[i]:
+                lst[i - 1], lst[i] = lst[i], lst[i - 1]
+                swapped = True
+                steps += 1
+                print_list(lst)
+    
+    return steps
+
+def play_bubble_sort_game():
+    # Generate a random unsorted list of numbers
+    unsorted_list = random.sample(range(1, 10), 5)
+    
+    print("Welcome to the Bubble Sort Game!")
+    print("Can you sort this list in the fewest steps?")
+    print_list(unsorted_list)
+    
+    sorted_list = sorted(unsorted_list)
+    
+    player_steps = bubble_sort(unsorted_list.copy())
+    
+    if unsorted_list == sorted_list:
+        print(f"Congratulations! You sorted the list in {player_steps} steps.")
+    else:
+        print("Sorry, it seems like there was an issue with your sorting.")
+
+if __name__ == "__main__":
+    play_bubble_sort_game()
